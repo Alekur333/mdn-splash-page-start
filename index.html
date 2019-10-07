@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
@@ -124,36 +124,83 @@
 
       <div class="further-info">
         <!-- insert images with srcsets and sizes -->
+
         <a href="https://www.mozilla.org/en-US/firefox/new/">
+          
+          <img srcset="firefox_logo-only_RGB_120.png 120w, 
+                       firefox_logo-only_RGB_400.png 400w" 
+             sizes="(max-width: 480px) 120px, 400px"
+             src="firefox_logo-only_RGB_400.png" 
+             alt="firefox_logo">
+
+          <!--
           <picture>
             <source srcset="firefox_logo-only_RGB_120.png" media="(max-width: 480px)">
             <img src="firefox_logo-only_RGB_400.png" alt="firefox_logo">            
           </picture>
+        -->
+
         </a>
         <a href="https://www.mozilla.org/">
+
+          <img srcset="mozilla-dinosaur-head_120.png 120w, 
+                       mozilla-dinosaur-head_400.png 400w" 
+             sizes="(max-width: 480px) 120px, 400px"
+             src="mozilla-dinosaur-head_400.png" 
+             alt="mozilla-dinosaur-head">
+          
+          <!--
+          <picture>
           <source srcset="mozilla-dinosaur-head_120.png" media="(max-width: 480px)">
           <img src="mozilla-dinosaur-head_400.png" alt="mozilla-dinosaur-head">
+          </picture>
+          -->
+
         </a>
         <a href="https://addons.mozilla.org/">
+
+          <img srcset="firefox-addons_120.jpg 120w, 
+                       firefox-addons_400.jpg 400w" 
+             sizes="(max-width: 480px) 120px, 400px"
+             src="firefox-addons_400.jpg" 
+             alt="firefox-addons.jpg">
+
+          <!--
+          <picture>
           <source srcset="firefox-addons_120.jpg" media="(max-width: 480px)" >
           <img src="firefox-addons_400.jpg" alt="firefox-addons">
+          </picture>
+          -->
+
         </a>
-        <a href="https://developer.mozilla.org/en-US/">          
+
+        <a href="https://developer.mozilla.org/en-US/">
+
           <img src="mdn.svg" alt="Mozilla Developer Net sign">
+
         </a>
+
         <div class="clearfix"></div>
+
       </div>
 
       <div class="red-panda">
-        <!-- insert picture element -->
-        
-          
-          <img src="red-panda_1200.jpg" 
-               alt="red-panda" 
-               srcset="red-panda_portrait.jpg 600w, 
-               red-panda_1200.jpg 1200w" 
-               sizes="(max-width: 480px) 600w">
-        
+        <!-- insert picture element  -->
+
+                      
+        <picture>
+          <source srcset="red-panda-600.jpg" media="(max-width: 600px)">
+          <img src="red-panda-1200.jpg" alt="red-panda">          
+        </picture>        
+         
+        <!--
+        <img srcset="red-panda-1200.jpg 1200w, 
+                     red-panda-600.jpg 600w" 
+             sizes="(max-width: 600px) 600px, 1200px"
+             src="red-panda-1200.jpg" 
+             alt="red-panda">        
+            -->   
+                
       </div>
 
     </main>
